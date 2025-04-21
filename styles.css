@@ -1,119 +1,120 @@
-:root {
-    --header-color: white;
-    --font-color: #aed3e1;
-    --bg-color: #070040;
- }
- 
- body {
-    font-family: Arial, sans-serif;
-    color: var(--font-color);
-    background-color: var(--bg-color);
+body{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: center;
+        background-color: navy;
+        color: aliceblue;
+}
+
+.box-container {
     display: grid;
-    justify-content: center;
-    grid-gap: 5px 50px;
-    grid-template-columns: auto;
-    grid-template-areas: "head" "members" "concerts" "contact";
- }
- 
- header {
-    grid-area: head;
- }
- 
- header > img {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
- }
- 
- h1 {
-    color: var(--header-color);
-    font-size: 3rem;
-    font-style: italic;
-    font-variant: small-caps;
-    text-align: center;
- }
- 
- h2 {
-    color: var(--header-color);
-    font-size: 2.5rem;
-    font-variant: small-caps;
- }
- 
- section {
-    margin-left: 20px;
-    margin-right: 20px;
- }
- 
- #members {
-    grid-area: members;
- }
- 
- #members ul {
-    list-style-type: circle;
-    margin: 0;
-    padding-inline-start: 12px;
- }
- 
- #members img {
-    margin-right: 20px;
-    margin-bottom: 10px;
- }
- 
- .band-member {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px; 
+    padding: 20px;
+  }
+
+  .box-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+  .box-container3 {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
- }
- 
- #concerts {
-    grid-area: concerts;
- }
- 
- #contact {
-    grid-area: contact;
- }
- 
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
- 
- .nav {
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+  }
+
+  .box1{ 
+  background-color: rgb(255, 205, 213);  
+  border-radius: 10px;
+  width: 550px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+  }
+
+.box2{ 
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
     text-align: center;
-    margin-top: 12px;
- }
- 
- .nav a {
-    text-decoration: none;
-    text-transform: lowercase;
-    font-weight: bold;
-    font-size: larger;
-    margin-left: 10px;
-    margin-right: 10px;
- }
- 
- a:link {
-    color: #aed3e1;
- }
- 
- a:visited {
-    color: #aed3e1;
- }
- 
- a:hover {
-    color: yellow;
- }
- 
- a:active {
-    color: purple;
- }
- 
- tr:nth-child(even) {
-    background: #170070
- }
- 
- td {
-    padding: 10px;
- }
- 
+}
+
+.box3{ 
+    background-color: tan;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box4{ 
+    background-color: rgb(147, 186, 147);
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box5{ 
+    background-color: rgb(168, 123, 168);
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    float: left;
+}
+
+.box6{ 
+    background-color: rgb(204, 165, 25);
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    float: left;
+}
+.box7{ 
+    background-color: rgb(219, 65, 65);
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    float: left;
+}
+
+.box8{ 
+    background-color: orange;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    float: left;
+}
